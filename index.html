@@ -21,8 +21,14 @@
     <!-- v-show approach -->
     <p v-show="goal.length === 0">Please Input Your Goal</p>
     <ul v-show="goal.length > 0">
-        <li>Goal</li>
+        <!-- v-for -->
+        <li v-for="(el, index, arr) in goal">{{index + 1}}. {{el}}</li>
     </ul>
+
+    <ul>
+        <li v-for="num in 10"> {{num}}</li>
+    </ul>
+
 
 
     <script src="https://unpkg.com/vue@next"></script>
