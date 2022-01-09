@@ -12,10 +12,18 @@
     <button @click="addGoal">Input</button>
 
     <!-- v-if approach -->
-    <p v-if="isThereGoal">Please Input Your Goal</p>
+    <!-- <p v-if="isThereGoal">Please Input Your Goal</p>
     <ul>
         <li>Goal</li>
+    </ul> -->
+
+    <!-- recommend using vshow because this hide an element not removing -->
+    <!-- v-show approach -->
+    <p v-show="goal.length === 0">Please Input Your Goal</p>
+    <ul v-show="goal.length > 0">
+        <li>Goal</li>
     </ul>
+
 
     <script src="https://unpkg.com/vue@next"></script>
     <script src="app.js"></script>
