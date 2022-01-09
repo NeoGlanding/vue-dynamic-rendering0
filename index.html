@@ -22,7 +22,7 @@
     <p v-show="goal.length === 0">Please Input Your Goal</p>
     <ul v-show="goal.length > 0">
         <!-- v-for -->
-        <li v-for="(el, index, arr) in goal">{{index + 1}}. {{el}}</li>
+        <li v-for="(el, index, arr) in goal" :key="index">{{index + 1}}. {{el}}</li>
     </ul>
 
     <ul>
