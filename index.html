@@ -25,6 +25,8 @@
         <li v-for="(el, index, arr) in goal" :key="index">{{index + 1}}. {{el}}</li>
     </ul>
 
+    <p v-for="(el, i, arr) in arrOfObj"> {{el.class}} </p>
+
     <ul>
         <li v-for="num in 10"> {{num}}</li>
     </ul>

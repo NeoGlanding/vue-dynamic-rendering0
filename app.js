@@ -2,7 +2,8 @@ let app = Vue.createApp({
     data() {
         return {
             enteredGoal: '',
-            goal: []
+            goal: [],
+            arrOfObj: [{name: 'Ihsan', class: 'Computer Network Engineering'}]
         }
     },
     computed: {
